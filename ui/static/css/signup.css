@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(/home/mohamad/Documents/projects/ireporter/ui/static/images/image1.jpg);
+    background-image: url(/home/mohamad/Documents/projects/ireporter/ui/static/images/paper-3164718__340.jpg);
     background-size: cover;
     background-position: stretch;
     font-family: sans-serif:
@@ -10,7 +10,7 @@ body{
 
 .loginbox{
     width: 320px;
-    height: 350px;
+    height: 450px;
     background: rgba(34, 33, 31, 0.5);
     color: rgb(216, 223, 226);
     top: 50%;
