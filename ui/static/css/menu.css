@@ -1,0 +1,10 @@
+
+#Home {
+    background-position: stretch;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(/home/mohamad/Documents/projects/ireporter/ui/static/images/hands-699486__340.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
