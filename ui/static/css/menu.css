@@ -1,10 +1,75 @@
 
-#Home {
-    background-position: stretch;
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
     margin: 0px;
-    padding: 0px;
-    background-image: url(/home/mohamad/Documents/projects/ireporter/ui/static/images/hands-699486__340.jpg);
-    background-size: cover;
-    background-position: center;
     font-family: sans-serif;
-}
+  }
+  
+  /* Style tab links */
+  .tablink {
+    background-color:  rgba(34, 33, 31, 0.5);
+    color: none;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 15px;
+    font-size: 20px;
+    width: 25%;
+  }
+  
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: #000;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+  #Home {
+      background-position: stretch;
+      background-attachment: absolute;
+      height: 100%;
+      width: 100%;
+      background-size: cover;  
+      background-image: url(/home/mohamad/Documents/projects/ireporter/ui/static/images/human-567563.jpg);
+      background-repeat: no-repeat;
+      font-family: sans-serif;
+  }
+  #Records {
+      
+      background-position: 50% 25%;
+      height: 700px;
+      background-attachment: fixed;
+      background-image: url(/home/mohamad/Documents/projects/ireporter/ui/static/images/pen-1974727.jpg);
+      background-size: cover;
+      font-family: sans-serif;
+  }
+  #Profile {
+    background-image: url(/home/mohamad/Documents/projects/ireporter/ui/static/images/photographer-67127.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    height: 700px;
+    background-size: cover;
+    font-family: sans-serif;
+  }
+  #Logout {
+    
+    background-image: url(/home/mohamad/Documents/projects/ireporter/ui/static/images/health-2082630.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    height: 700px;
+    background-size: cover;
+    font-family: sans-serif;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  
+  p {
+    font-size: 25px;
+  }

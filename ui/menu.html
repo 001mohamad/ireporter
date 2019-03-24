@@ -2,84 +2,8 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {box-sizing: border-box}
+<link rel="stylesheet" type="text/css" href="static/css/menu.css"
 
-/* Set height of body and the document to 100% */
-body, html {
-  height: 100%;
-  margin: 0px;
-  font-family: sans-serif;
-}
-
-/* Style tab links */
-.tablink {
-  background-color: rgba(34, 33, 31, 0.5);
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 15px 15px;
-  font-size: 20px;
-  width: 25%;
-}
-
-.tablink:hover {
-  background-color: #777;
-}
-
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  color: rgb(15, 15, 15);
-  display: none;
-  padding: 100px 20px;
-  height: 100%;
-}
-#Home {
-    background-position: stretch;
-    background-attachment: absolute;
-    height: 100%;
-    width: 100%;
-    background-size: cover;  
-    background-image: url(/home/mohamad/Downloads/manhattan-336708.jpg);
-    background-repeat: no-repeat;
-    font-family: sans-serif;
-}
-#Records {
-    
-    background-position: 50% 25%;
-    height: 700px;
-    background-attachment: fixed;
-    background-image: url(/home/mohamad/Downloads/computer-2982270_1920.jpg);
-    background-size: cover;
-    font-family: sans-serif;
-}
-#Profile {
-  background-image: url(/home/mohamad/Downloads/globe-791596.jpg);
-  background-position: center;
-  background-attachment: fixed;
-  height: 700px;
-  background-size: cover;
-  font-family: sans-serif;
-}
-#Logout {
-  
-  background-image: url(/home/mohamad/Downloads/health-2082630.jpg);
-  background-position: center;
-  background-attachment: fixed;
-  height: 700px;
-  background-size: cover;
-  font-family: sans-serif;
-}
-h1 {
-  font-size: 50px;
-}
-
-p {
-  font-size: 25px;
-}
-</style>
 </head>
 <body>
 <button class="tablink" onclick="openPage('Home', this, 'rgba(34, 33, 31, 0.5)')" >Home</button>
@@ -100,15 +24,18 @@ p {
 </div>
 
 <div id="Profile" class="tabcontent">
-  <h3><strong><u> PROFILE </u></strong></h3>
-  <p>view your profile</p>
+<a href="profile.html"><strong><u>View My Profile</u></strong></a>
 </div>
+
+
+
 <div id="Logout" class="tabcontent">
     <h3><strong><u><a href="signin.html">LOGOUT</a></u><strong></h3>
   <p>-feel free to join next time.</p>
   <p>-your presence is valuable to us.</p>
   <p>-thank you</p>
 </div>
+
 
 <script>
 function openPage(pageName,elmnt,color) {
