@@ -4,6 +4,7 @@
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
@@ -45,8 +46,61 @@ a {
 </style>
 </head>
 <body>
-    <a href="menu.html"><strong><u>Return To Profile</u></strong></a>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="static/css/menu.css"
+    
+    </head>
+    <body>
+    <button class="tablink" onclick="openPage('Home', this, 'rgba(34, 33, 31, 0.5)')" ><a href="home.html"><strong>Home</strong></a></button>
+    <button class="tablink" onclick="openPage('Records', this, 'rgba(34, 33, 31, 0.5)')"><a href="record.html"><strong>Records</strong></button></a>
+    <button class="tablink" onclick="openPage('Profile', this, 'rgba(34, 33, 31, 0.5)')"><a href="profile.html"><strong>Profile</strong></a></button>
+    <button class="tablink" onclick="openPage('Logout', this, 'rgba(34, 33, 31, 0.5)')"><u><strong>Logout</strong></u></button>
+    
+    <div id="Home" class="tabcontent">
+      <h3><strong><u>HOME</u></strong></h3>
+      <h1><u><center><strong>WELCOME TO IREPORTER</strong></center></u></h1>
+    
+      <P>Here individuals come together by availing various ideas on eliminating corruption in our country.</P>
+    </div>
+    
+    <div id="Records" class="tabcontent">
+      <h3><strong><u>RECORDS</u></strong></h3>
+      <p>view records</p> 
+    </div>
+    
+    <div id="Profile" class="tabcontent">
+        <h3><strong><u>PROFILE</u></strong></h3>
+    </div>
+    
+    
+    
+    <div id="Logout" class="tabcontent">
+        <h3><strong><u><a href="signin.html">LOGOUT</a></u><strong></h3>
+      <p>-feel free to join next time.</p>
+      <p>-your presence is valuable to us.</p>
+      <p>-thank you</p>
+    </div>
+    
+    
+    <script>
+    function openPage(pageName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+       
 <h2 style="text-align:center"><u>My Profile Card</u></h2>
 
 <div class="card">
