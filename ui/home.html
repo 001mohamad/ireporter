@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="static/css/home.css"
+
+</head>
+<button class="tablink" onclick="openPage('Home', this, 'rgba(34, 33, 31, 0.5)')" ><a href="home.html"><strong>Home</strong></a></button>
+<button class="tablink" onclick="openPage('Records', this, 'rgba(34, 33, 31, 0.5)')"><a href="record.html"><strong>Records</strong></button></a>
+<button class="tablink" onclick="openPage('Profile', this, 'rgba(34, 33, 31, 0.5)')"><a href="profile.html"><strong>Profile</strong></a></button>
+<button class="tablink" onclick="openPage('Logout', this, 'rgba(34, 33, 31, 0.5)')"><u><strong>Logout</strong></u></button>
+
+<div id="Home" class="tabcontent">
+  <h1><u><center><strong>WELCOME TO IREPORTER</strong></center></u></h1>
+
+  <P>Here individuals come together by availing various ideas on eliminating corruption in our country.</P>
+</div>
+
+<div id="Records" class="tabcontent">
+  <h3><strong><u>RECORDS</u></strong></h3>
+  <p>view records</p> 
+</div>
+
+<div id="Profile" class="tabcontent">
+    <h3><strong><u>PROFILE</u></strong></h3>
+</div>
+
+
+
+<div id="Logout" class="tabcontent">
+    <h3><strong><u><a href="signin.html">LOGOUT</a></u><strong></h3>
+  <p>-feel free to join next time.</p>
+  <p>-your presence is valuable to us.</p>
+  <p>-thank you</p>
+</div>
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+
+<p> corruption is a dishonesty or criminal activity done by a person or organisation that is in authority   so as to acquire illicit benefit</p>
+
+<h2>Corruption Quotes:</h2>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="static/css/home.css"
+
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="static/css/menu.css"
+
+</head>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="static/images/corruption quotes 1 image" alt="" width="500" height="333">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="static/images/corruption quote 2 image" alt="" width="500" height="333">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="static/images/corruption quote 3 image" alt="" width="500" height="333">
+  <div class="text">Caption Three</div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="static/images/corruption quote 8 image" alt="" width="500" height="333">
+  <div class="text">Caption Four</div>
+</div>
+          
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="static/images/corruption quote 9 image" alt="" width="500" height="333">
+  <div class="text">Caption Five</div>
+</div>          
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="static/images/corruption quote 10 image" alt="" width="500" height="333">
+  <div class="text">Caption Six</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
