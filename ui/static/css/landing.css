@@ -1,19 +1,26 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(/home/mohamad/Documents/projects/ireporter/ui/static/images/human-567563.jpg);
+    background-image: url(/home/mohamad/Desktop/mohamad/images/banner-decoration-display-163046.jpg);
     background-size: cover;
     background-position: stretch;
     font-family: sans-serif;
+
+
 }
 
-.landingbox{
-    width: 400px;
-    height: 350px;
-    background: rgba(230, 221, 221, 0.5);
-    color: rgb(19, 18, 18);
+.h1 {
+    color: black;
+}
+
+.landingcircle {
+    width: 450px;
+    height: 300px;
+    background: rgb(15, 15, 15, 0.5);
+    border-radius: 50%;
+    color: rgb(216, 223, 226);
     top: 50%;
-    left: 50%;
+    left: 25%;
     position: absolute;
     transform: translate(-50%,-50%);
     box-sizing: border-box;
@@ -33,20 +40,21 @@ h1{
     padding: 0 0 20px;
     text-align: absolute;
     font-size: 22px;
+    
 }
 
-.landingbox p{
+.landingcircle p{
     margin: 0;
     paddingg: 0;
     font-weight: bold;
 }
 
-.landingbox input{
+.landingcircle input{
     width: 100%;
     margin-bottom: 20px;
 }
 
-.landingbox input[type="text"], input[type="password"]
+.landingcircle input[type="text"], input[type="password"]
 
 { 
     border: none;
@@ -58,7 +66,7 @@ h1{
     font-size: 16px;
 }
 
-.landingbox input[type="submit"]
+.landingcircle input[type="submit"]
 { 
     border: none;
     outline: none;
@@ -68,7 +76,7 @@ h1{
     font-size: 18px;
     border-radius: 20px;
 }
-.landingbox input[type="submit"]
+.landingcircle input[type="submit"]
 {
     border: none;
     outline: none;
@@ -80,18 +88,19 @@ h1{
 
 }
 
-.landingbox input[type="submit"]:hover
+.landingcircle input[type="submit"]:hover
 {
     cursor: pointer;
     background: rgba(32, 32, 30, 0.5);
     color: rgb(226, 210, 210);
 }
-.landingbox a{
+.landingcircle a{
     text-decoration: none;
     font-size: 12px;
     line-height: 20px;
     color: #000;
 }
-.landingbox a:hover {
+.landingcircle a:hover
+{
     color: #000;
 }
