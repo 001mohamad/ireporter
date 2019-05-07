@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(/home/mohamad/Desktop/mohamad/images/banner-decoration-display-163046.jpg);
+    background-image: url(/home/mohamad/Documents/projects/ireporter/ui/static/images/banner-decoration-display-163046.jpg);
     background-size: cover;
     background-position: stretch;
     font-family: sans-serif;
@@ -14,8 +14,8 @@ body{
 }
 
 .landingcircle {
-    width: 450px;
-    height: 300px;
+    width: 400px;
+    height: 350px;
     background: rgb(15, 15, 15, 0.5);
     border-radius: 50%;
     color: rgb(216, 223, 226);
