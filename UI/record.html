@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="static/css/record.css">
+
+</head>
+<body>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="record.html">Records</a>
+  <a href="profile.html">Profile</a>
+  <a href="signin.html">Logout</a>
+</div>
+
+<div class="recordbox">
+
+  <form method="post" action="demo_add.asp">
+  
+  <table>
+  
+  <tr>
+  <td>Idname</td>
+  <td><input name="idname"></td>
+  </tr><tr>
+  <td>Email</td>
+  <td><input name="email"></td>
+  
+  </table>
+  
+  <form action="">
+    <input type="radio" name="gender" value="male"> Red-flag<br>
+    <input type="radio" name="gender" value="female"> Intervention<br>
+    
+  </form>
+  
+  <br><br>
+  <form action="mailto:someaddr@somedomainforexample.com" method="get">
+  Comment: <textarea name="body"></textarea><br/>
+  <button type="submit"><a href="home.html">send</a></button>
+</div>
+
+</body>
+</html>
